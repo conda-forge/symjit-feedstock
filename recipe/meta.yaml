@@ -1,5 +1,5 @@
 {% set name = "symjit" %}
-{% set version = "1.2" %}
+{% set version = "1.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/symjit-{{ version }}.tar.gz
-  sha256: 8b5d497d0cad18930c37fa0610b38d211ad4be56f10b533484be7b64f6d09cef
+  sha256: 8398ceb11d557c5b5bdce4e7d358b741d2d5278d1e374588f5bd6bbb5a581ebd
 
 build:
   script:
@@ -28,10 +28,10 @@ requirements:
     - python
     - setuptools
     - setuptools-rust
-  run:
-    - numpy
+  run:    
     - python
     - sympy
+    - {{ pin_compatible("numpy") }}
 
 test:
   files:
