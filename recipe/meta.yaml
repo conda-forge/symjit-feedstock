@@ -31,7 +31,7 @@ requirements:
   run:    
     - python
     - sympy
-    - {{ pin_compatible("numpy") }}
+    - numpy
 
 test:
   files:
