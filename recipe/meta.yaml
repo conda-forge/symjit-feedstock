@@ -1,5 +1,5 @@
 {% set name = "symjit" %}
-{% set version = "1.2" %}
+{% set version = "1.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,15 +7,15 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/symjit-{{ version }}.tar.gz
-  sha256: 8b5d497d0cad18930c37fa0610b38d211ad4be56f10b533484be7b64f6d09cef
+  sha256: 8398ceb11d557c5b5bdce4e7d358b741d2d5278d1e374588f5bd6bbb5a581ebd
 
 build:
   script:
     - cargo-bundle-licenses --format yaml --output THIRDPARTY.yml
     - {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
   # symjit does not seem to support OSX (returns ValueError on import)
-  skip: True  # [osx]
+  skip: true  # [osx]
 
 requirements:
   build:
