@@ -49,8 +49,8 @@ about:
     - LICENSE
     - THIRDPARTY.yml
   summary: |
-    Symjit is a lightweight just-in-time (JIT) compiler that directly
-    translates sympy expressions into machine code.
+    Symjit is a lightweight just-in-time (JIT) compiler that 
+    directly translates sympy expressions into machine code.
 
 extra:
   recipe-maintainers:
