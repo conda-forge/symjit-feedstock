@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://svtsim.com/symjit/symjit-{{ version }}.tar.gz
-  sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/symjit-{{ version }}.tar.gz
+  sha256: e7ea18cc20fd61cb9deb5df144643dfb5d55751594268663dfe3bf9fb3b862d5
 
 build:
   script:
