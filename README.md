@@ -7,8 +7,8 @@ Home: https://github.com/siravan/symjit
 
 Package license: MIT
 
-Summary: Symjit is a lightweight just-in-time (JIT) compiler that
-directly translates sympy expressions into machine code.
+Summary: Symjit is a lightweight just-in-time (JIT) compiler that directly
+translates sympy expressions into machine code.
 
 
 Current build status
@@ -298,4 +298,5 @@ Feedstock Maintainers
 =====================
 
 * [@moorepants](https://github.com/moorepants/)
+* [@shahriariravanian](https://github.com/shahriariravanian/)
 
