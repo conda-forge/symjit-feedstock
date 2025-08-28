@@ -1,5 +1,5 @@
 {% set name = "symjit" %}
-{% set version = "2.4.0" %}
+{% set version = "2.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/symjit-{{ version }}.tar.gz
-  sha256: a5fea4f7a65d74c3db07e496af9f8acf94ddc44fcb913efec20db372573c4d1a
+  sha256: 8003afa736755aa2f61d0dea1839e0d340d415f95d5a357b6c4d09771ea3c464
 
 build:
   script:
     - cargo-bundle-licenses --format yaml --output THIRDPARTY.yml
     - {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   build:
