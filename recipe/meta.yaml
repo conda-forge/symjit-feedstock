@@ -49,7 +49,7 @@ about:
   license: MIT
   license_file:
     - LICENSE
-    - THIRDPARTY.yml
+    # - THIRDPARTY.yml
   summary: |
     Symjit is a lightweight just-in-time (JIT) compiler that directly
     translates sympy expressions into machine code.
