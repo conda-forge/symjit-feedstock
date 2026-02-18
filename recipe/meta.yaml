@@ -1,5 +1,5 @@
 {% set name = "symjit" %}
-{% set version = "2.12.3" %}
+{% set version = "2.13.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/symjit-{{ version }}.tar.gz
-  sha256: dd430c817d1fca2be04189a24243b5aa6bedcdb0287ca542c8bcd92e47e76d82
+  sha256: 25cbd094cc2b99572ce4a8166fb06743696bd6b6ccd8c6dae8bc13c43e58b6fc
 
 build:
   script:
