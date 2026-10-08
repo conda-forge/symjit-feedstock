@@ -1,19 +1,19 @@
 {% set name = "symjit" %}
-{% set version = "2.25.1" %}
+{% set version = "2.27.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/53/61/982f8ce15576f030fb979e60fe34067bc9702087ce807356dced6c47487a/symjit-{{ version }}.tar.gz
-  sha256: 650cfaf63d57a91f3ab52273cafb233caf172d92ef693f5fc3d6e2fd03d1535b
+  url: https://files.pythonhosted.org/packages/66/c4/dd6b27286471e4420dd191f1ddbd3ab99c8d1e603b4f6a9c734672f74487/symjit-{{ version }}.tar.gz
+  sha256: 5719cfc3465e63eccd59145d0ffa038a128b7f900cf2c19369b2717e98868e19
 
 build:
   script:
     - cargo-bundle-licenses --format yaml --output THIRDPARTY.yml
     - {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   build:
