@@ -1,13 +1,13 @@
 {% set name = "symjit" %}
-{% set version = "2.29.1" %}
+{% set version = "2.29.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/4e/77/fe4de60af33cd0ffbd9da3d694a54504965f5f2ce2fe76a940ce24db8029/symjit-{{ version }}.tar.gz
-  sha256: 14a4ba68cc0d5453c803ca09f9b274dfb3217b285a529ed10e70a41bd2237107
+  url: https://files.pythonhosted.org/packages/03/ad/1a54bcb31a739b7694df480f3b068c91ad399bbf35197034a878282243ec/symjit-{{ version }}.tar.gz
+  sha256: 2e31ec95d4b44726b8b8c8b8391ab244694e7090d5456e8fca85415e2c342250
 
 build:
   script:
